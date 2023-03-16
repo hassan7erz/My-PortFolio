@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(9, 11.1111111111%);
+  background: hsl(216, 12%, 8%);
+}
+
+#rating {
+  background: hsl(213, 19%, 18%);
+  grid-area: 2/2/8/3;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+#rating * {
+  padding: 5px;
+}
+#rating #img {
+  background: hsl(216, 12%, 35%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rating #img img {
+  width: 25px;
+}
+#rating p {
+  color: hsl(217, 12%, 63%);
+  font-size: 20px;
+}
+#rating .choose {
+  display: flex;
+  justify-content: space-between;
+}
+#rating .choose div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsl(216, 12%, 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+}
+#rating .choose div:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+#rating .choose .active {
+  background: hsl(217, 12%, 63%);
+  color: white;
+}
+#rating button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 40px;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+#rating button:hover {
+  background: white;
+  color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 700px) {
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: hsl(213, 19%, 18%);
+  }
+  body #rating, body #thx {
+    grid-area: 1/1;
+  }
+  .choose {
+    flex-direction: column;
+    color: blue;
+  }
+  .choose div {
+    width: 100% !important;
+    margin: 5px auto;
+    border-radius: 10px !important;
+  }
+}
+#thx {
+  background: hsl(213, 19%, 18%);
+  grid-area: 2/2/8/3;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  display: none;
+}
+#thx #img1 {
+  padding: 10px;
+}
+#thx #result {
+  padding: 10px;
+  background: hsl(216, 12%, 25%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+}
+#thx h1 {
+  padding: 10px;
+  color: white;
+}
+#thx p {
+  color: hsl(217, 12%, 63%);
+  font-size: 20px;
+}
+
+.attribution {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

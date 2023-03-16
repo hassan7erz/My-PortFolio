@@ -1,0 +1,125 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    background-color: #eee;
+}
+
+.containe{
+    width: 96%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:violet;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul li:hover{
+    background: #dcdbdb
+}
+
+.container, #showAll{
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    transform: scale(1.03);
+}
+
+#inputs input{
+    margin: 5px 0;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+#pho{
+    display: inline;
+}
+
+#showAll{
+    width: 80%;
+    padding: 20px;
+}
+
+#book{
+    background: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+button{
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+#delete{
+    background: orangered;
+    color: white;
+}
+
+#update{
+    background: turquoise;
+}

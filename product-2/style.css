@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --gray: hsl(228, 12%, 48%);
+    --green: hsl(158, 36%, 37%);
+    --mon: "Montserrat";
+    --fra: "Fraunces";
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main{
+    width: 500px;
+    height: 400px;
+    margin: 10% auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.main > div{
+    width: 50%;
+    height: 100%;
+}
+.photo{
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: 100% 100%;
+}
+.info{
+    padding:25px;
+}
+h3{
+    color: var(--gray);
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-family: var(--mon);
+    font-weight: 700;
+}
+h1{
+    line-height: 27px;
+    font-size: 34px;
+    font-family: var(--fra);
+    color: hsl(212, 21%, 14%);
+}
+p{
+    margin: 30px auto;
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--mon);
+}
+.price{
+    margin: 20px 0;
+    font-size: 24px;
+    color: var(--green);
+    font-family: var(--fra);
+    font-weight: 700;
+}
+.price del{
+    font-size: 14px;
+    vertical-align: super;
+    margin-left: 10px;
+    color: var(--gray);
+}
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--green);
+    border:none;
+    border-radius: 10px;
+    font-family: var(--mon);
+    color: white;
+}

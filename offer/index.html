@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background:hsl(233, 47%, 7%);
+    }
+
+    .main{
+        width: 850px;
+        height:350px;
+        margin:10% auto;
+        background:hsl(244, 38%, 16%);
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        overflow: hidden;
+    }
+    .right{
+        width: 400px;
+        height: 100%;
+        background: linear-gradient(to bottom right, hsla(277, 100%, 50%, 30%),hsla(277, 100%, 50%,30%)), url('images/image-header-desktop.jpg'); 
+        filter: brightness();
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    }
+    .left{
+        width: 450px;
+        padding:15px 35px;
+    }
+    .one{
+        font-family: "Inter";
+        font-size: 32px;
+        font-weight: 700;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .one span{
+        color: blueviolet;
+    }
+    .two{
+        font-family: "Lexend Deca";
+        font-weight: 100;
+        color: hsla(0, 0%, 100%, 0.5);
+        margin: 25px 0 60px 0;
+        width: 90%;
+        font-size: 14px;
+    }
+    table{
+        margin-top: 50px;
+        width: 100%;
+        padding:5px 5px;
+        font-family: "Inter";
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .second td{
+        font-size: 9px;
+        letter-spacing: 2px;
+        color: hsla(0, 0%, 100%, 0.5);
+
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <p class="one">Get <span>insights</span> that help your business grow.</p>
+            <p class="two">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <table>
+                <tr>
+                    <td>10k+</td>
+                    <td>314</td>
+                    <td>12M+</td>
+                </tr>
+                <tr class="second">
+                    <td>companies</td>
+                    <td>template</td>
+                    <td>queries</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

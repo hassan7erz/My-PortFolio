@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk";
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+body .project {
+  display: flex;
+  margin: 80px auto;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0px 0px 50px hsl(230, 7%, 68%);
+  border-radius: 20px;
+  font-size: 26px;
+}
+body .project .result {
+  width: 50%;
+  height: 100%;
+  padding: 40px 50px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+body .project .result h3:first-child {
+  color: hsl(221, 100%, 96%);
+  font-weight: 800;
+}
+body .project .result .score {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+body .project .result .score h1 {
+  font-size: 80px;
+  color: white;
+}
+body .project .result .score p {
+  color: hsl(221, 100%, 96%);
+}
+body .project .result h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+body .project .result p:last-child {
+  color: hsl(221, 100%, 96%);
+  font-size: 22px;
+  text-align: center;
+}
+body .project .summary {
+  width: 50%;
+  height: 100%;
+  padding: 40px 50px;
+}
+body .project .summary div {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+body .project .summary div p span {
+  color: hsl(225, 5%, 71%);
+}
+body .project .summary span i {
+  padding: 5px;
+}
+body .project .summary .reaction {
+  background: hsl(0, 100%, 95%);
+}
+body .project .summary .memory {
+  background: hsl(39, 100%, 95%);
+}
+body .project .summary .verbal {
+  background: hsl(166, 100%, 95%);
+}
+body .project .summary .visual {
+  background: hsl(234, 85%, 95%);
+}
+body .project .summary button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 40px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 420px) {
+  body .project {
+    margin: 0;
+    box-shadow: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .project .result, body .project .summary {
+    width: 100%;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

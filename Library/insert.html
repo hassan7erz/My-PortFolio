@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="containe con">
+            <div id="logo">logo</div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="insert.html">Books</a></li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="inputs">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName">
+
+            <label for="authorName">Author Name</label>
+            <input type="text" id="authorName">
+
+            <label for="descrip">Description Book</label>
+            <input type="text" id="descrip">
+            
+            <div>Insert Book Photo: <input type="file" id="pho" disabled></div>
+            
+        </div>
+        <button id="submit" onclick="create()">Create</button>
+    </div>
+
+    <div id="showAll">
+        
+    </div>
+
+
+    <script src="main.js"></script>    
+</body>
+</html>

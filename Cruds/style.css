@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+    background: #222;
+    color: white;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: #111;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    
+}
+
+/* Start header */
+
+#head{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Input Area */
+
+#input{
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#pri input{
+    width: 20%;
+}
+
+small{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+small::before{
+    content: "Total : ";
+}
+
+#create, .sear button, table button, #deleteAl{
+    width: 100%;
+    background: rgb(115, 53, 115);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    border: none;
+    margin: 5px 0;
+    cursor:pointer;
+}
+
+.sear{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sear button{
+    width: 45%;
+}
+
+/* Start output */
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+table button{
+    width: 80%;
+    padding: 5px;
+}
+
+#delleteAl{
+    display: none;
+}
+
+
+

@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+/* Start Header */
+
+header{
+    background-color: #eee;
+}
+
+.container{
+    width: 96%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:violet;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul li:hover{
+    background: #dcdbdb
+}
+
+/* Start Content */
+#content .con1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 10px;
+    padding: 10px;
+}
+#content #book{
+    background-color: #eee;
+}
+#img{
+    height: 60%;
+    padding: 5px;
+}
+
+#info{
+    padding: 5px 10px;
+}
+
+
+
+/* Start Contact */
+
+#contact{
+    background-color: #eee;
+    width: 100%;
+}
+
+.con2{
+    text-align: center;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.con2 h2{
+    color: violet;
+}
+
+
+
+
+
+
+
+
+
+
